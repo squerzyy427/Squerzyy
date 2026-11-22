@@ -1,0 +1,76 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0d1117;
+  font-family: Arial, sans-serif;
+}
+
+.login-box {
+  width: 360px;
+  padding: 40px;
+  border-radius: 20px;
+  background: #010326;
+  box-shadow: 
+    15px 15px 30px #2d0140,
+    -10px -10px 25px #222a33;
+}
+
+.input-group {
+  position: relative;
+  margin: 25px 0;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 15px 15px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: #010326;
+  color: #fff;
+  font-size: 16px;
+  box-shadow: 
+  inset 5px 5px 10px #2d0140,
+  inset -5px -5px 10px #222a33;
+  transition: 0.4s ease;
+}
+
+.input-group input:focus+label,
+.input-group input:not(:placeholder-shown)+label {
+  top: -10px;
+  left: 12px;
+  padding:0 7px;
+  background: #010326;
+  color: #a305a6;
+  font-size: 13px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #a305a6;
+  color: #010326;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: translatey(-3px);
+  box-shadow: 0 0 20px rgba(163, 5, 166, 1)
+}
+
+button:active {
+  transform: scale(0.97);
+}
